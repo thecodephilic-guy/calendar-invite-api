@@ -20,22 +20,42 @@ A RESTful API built with Django that automates the creation and distribution of 
 ## Setup
 
 1. Clone the repository:
+```bash
 git clone https://github.com/thecodephilic-guy/calendar-invite-api.git
-2. Navigate to the project directory:
+```
+3. Navigate to the project directory:
+```bash
 cd calendar-invite-api
-3. Create a virtual environment and activate it:
+```
+4. Create a virtual environment and activate it:
+```bash
 python -m venv venv
-source venv/bin/activate  # On Windows use venv\Scripts\activate
-4. Install the required packages:
+```
+```bash
+source venv/bin/activate
+```
+On Windows use 
+```bash
+venv\Scripts\activate
+```
+6. Install the required packages:
+```bash
 pip install -r requirements.txt
-5. Create a `.env` file in the project root and add your email credentials:
+```
+8. Create a `.env` file in the project root and add your email credentials:
+```.env
 EMAIL_HOST_USER=your-email@yourdomain.com
 EMAIL_HOST_PASSWORD=your-email-password
-6. Update `settings.py` with your email host information.
-7. Run migrations:
+```
+10. Update `settings.py` with your email host information.
+11. Run migrations:
+```bash
 python manage.py migrate
-8. Start the development server:
+```
+13. Start the development server:
+```bash
 python manage.py runserver
+```
 
 ## Usage
 
